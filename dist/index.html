@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Roster</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div id="divInput">
+        <input id="input" type="text" placeholder="------>>>>     Choose your team  <<<<<-------">
+        <button id="button" onclick=renderr()> CLICK </button>
+    </div>
+
+    <script id="template" type="text/x-handlebars-template">
+        {{#each data}}
+
+        <div class = "box">
+            <p class=" p ">{{firstName}} {{lastName}}</p> 
+            <img class= "img" src="https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}">
+            <p class="p" >{{jersey}}</p>
+            <p class="p" >{{pos}}</p> 
+            </div>
+        {{/each}}
+
+    </script>
+    <div id="bigbox"></div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

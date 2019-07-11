@@ -1,0 +1,63 @@
+body{
+   background-image: url("http://eskipaper.com/images/lakers-wallpaper-3.jpg")
+}
+#bigbox{
+   display: grid ;
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr
+}
+.box{
+    display: inline-block;
+    background-color: #F4B430;
+}
+#input{
+   width: 90vw;
+   height: 3vh;
+   border-radius: 10px;
+   border : 1px solid rgb(109, 75, 119);
+}
+#button{
+   background-color: bisque;
+   width: 8vw;
+   height: 3vh;
+   display: inline-block;
+   padding: 15px ;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   color: black;
+   font-weight: bolder;
+   background-color: #F4B430;
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 9px #999;
+}
+
+#button:hover {background-color: #bd60fa}
+
+#button:active {
+ background-color: #9b5cff;
+ box-shadow: 0 1px #666;
+ transform: translateY(4px);
+}
+
+.box{
+   background-image: url('https://hdwallsource.com/img/2014/10/wood-floor-texture-5477-5604-hd-wallpapers.jpg');
+   align-items: center;
+   margin: 50px;
+   margin-left: 115px;
+   border: 1px solid black;
+   border-radius: 15px;
+   box-shadow: 1px 2px 9px #999;
+   background-color: rgb(250, 144, 57);
+}
+.img{
+  margin-left:50px
+}
+.p{
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: bold;
+   color: black;
+   margin-left: 90px;
+}
